@@ -4,7 +4,7 @@
 /* Header */
 .header{   
     position: relative;  
-    background-image: url('./assets/img/head1.avif'); 
+    background-image: url('/assets/img/head1.avif'); 
     background-size: cover; 
     background-position:center;
     background-repeat: no-repeat;  
@@ -96,7 +96,7 @@
 .title{
     color: #00539f;
     text-align: center;
-    margin-bottom: 40px;
+    margin: 40px;
 }
 .schl-desc{
     color:#00539f;
@@ -168,7 +168,7 @@
 }
 /* Extra infor */
 .extra-in4{
-    margin-top:3rem;
+    margin-top:5rem;
 }
 .extra-list{
     display:flex;
@@ -206,7 +206,7 @@
 
 /*infer*/
 .infer{
-    background-image: url('./assets/img/overview.jpg');
+    background-image: url('/assets/img/overview.jpg');
     background-position: center;
     background-size: cover;
     height: 30rem;
@@ -228,7 +228,7 @@
     margin-top:3.5rem;
 }
 .first-footer{
-    background: url(./assets/img/footer.jpg);
+    background: url('/assets/img/footer.jpg');
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
