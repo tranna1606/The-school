@@ -4,7 +4,7 @@
 /* Header */
 .header{   
     position: relative;  
-    background-image: url('/assets/img/head1.avif'); 
+    background-image: url('../img/index/head1.avif');
     background-size: cover; 
     background-position:center;
     background-repeat: no-repeat;  
@@ -168,7 +168,7 @@
 }
 /* Extra infor */
 .extra-in4{
-    margin-top:5rem;
+    margin-top:3rem;
 }
 .extra-list{
     display:flex;
@@ -206,7 +206,7 @@
 
 /*infer*/
 .infer{
-    background-image: url('/assets/img/overview.jpg');
+    background-image: url('../img/index/overview.jpg');
     background-position: center;
     background-size: cover;
     height: 30rem;
@@ -224,20 +224,22 @@
     top:3rem;
     padding: 5rem 2rem;
 }
+
+/*footer*/
 .footer{
-    margin-top:3.5rem;
-}
-.first-footer{
-    background: url('/assets/img/footer.jpg');
+    background: url('../img/index/footer.jpg');
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
     height:30rem;
+    margin-top:3.5rem;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
 }
 .footer-logo{
     width:20%;
 }
-
 .footer-logo img{
     width: 100%;
 }
@@ -246,15 +248,108 @@
 }
 .social-network{
     margin-top:2rem;
+    font-size: 40px;
+    color:white;
 }
-
+.footer-menu-1{
+    position:absolute;
+    color:white;
+    top:30px;
+    right:40px;
+}
+.menu-1-section{
+    text-align: center;
+    padding: 8px 16px;
+   
+}
+.menu-1-section>i{
+    font-size: 40px;
+}
+.menu-1-section>div{
+    border: 2px solid white;
+    margin-top:1rem;
+    font-size:12px;
+    padding:11px 22px;
+}
 .contact li{
     list-style-type: none;
     line-height:2.0;
-    color:#fff;
-}
-.contact li a{
+    color:beige;
     text-decoration:none;
 }
+.menu-item {
+    text-decoration: none;
+    list-style-type:none;
+    color:beige;
+    line-height:1.6;
+    font-weight:700;
+}
+.license{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    color:antiquewhite;
+}
+.modal{
+    position:fixed;
+    /*tu dong width height bang voi cua so trinh duyet*/
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.4);
+    align-items:center;
+    justify-content:center;
+    display:none;
+}
+.modal.open{
+    display:flex;
+}
+.modal-container{
+    background:#fff;
+    width:900px;
+    max-width:calc(100% - 32px);
+    min-height:200px;
+    position:relative;
+    animation:modalFadeIn ease .5s;
+}
+.modal-header{
+    background-color:#005a87;
+    height: 130px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    color:#fff;
+}
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    opacity:0.8;
+}
+.modal-close:hover{
+    opacity:1;
+}
+.modal-body{
+    padding:16px;
+    display:inline-block;
+}
 
+@keyframes modalFadeIn {
+    from{
+        opacity:0;
+        transform:translateY(-140px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);/*tra ve vt ban dau*/
+    }
+}
 
+.width{
+    width:100%;
+}

@@ -79,32 +79,97 @@ input.input-search {
 }
 .header-img{
     width:100%;
+    display: flex;
 }
 .header-img img{
     width:100%;
 }
+/*welcome*/
+.welcome{
+    background-color: #b4ebf5;
+    align-items:center;
+    margin-top:0;
+}
+.welcome-left{
+    width:50%;
+    color:#111a29;
+    padding:100px 0px;
+    margin: 0px 70px; 
+}
+.welcome-left h2{
+    font-weight:500;
+    text-transform: uppercase;
+    letter-spacing: -0.4px;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:32px;
+}
+.welcome-left p{
+    font-size:20px;
+    font-weight:400;
+    line-height:1.6;
+    
+}
+.welcome-right{
+    width:50%;
+}
+.welcome-img{
+    width:100%;
+}
+
+
+
 .general{
     
 }
 .bridge{
-    width:70%;
+    width:50%;
 }
 .bridge-img{
     width:100%;
+    height: 100%;
 }
 .flex{
     display:flex;
 }
 .general-intro{
-    width:30%;
-    background-color: #7ba4db;
-    background-image:url(/assets/img/map.png);
-    background-blend-mode: color-dodge;
+    width:50%;
+    padding:70px;
+    line-height:1.6;
 }
-.benefit{
-    background-color: #e8f8fb;
+.benefit-left{
+    width:50%;
+    padding: 70px;
+}
+.heading-1{
+    font-size:14px;
+    color: #177584;
+    font-weight:600;
+    margin-bottom:30px;
+}
+.heading-2{
+    font-size:38px;
+    margin-bottom:30px;
+}
+.benefit-heading-3{
+    color:#111a29;
+    font-size:20px;
+}
+.benefit-heading>ul{
+    margin-left:50px;
+    font-size:18px;
+    margin-bottom:30px;
+}
+.benefit-right{
+    width:50%;
+}
+.benefit-img{
+    height:100%;
+}
+.benefit-body{
+    background-color:#e8f8fb;
     color:#005d83;
-    width: 40%;
+    width: 80%;
     border-radius:16px;
     padding: 25px;
 }
@@ -116,4 +181,143 @@ input.input-search {
     opacity: .8;
     list-style-type: none;
     margin:20px;
+}
+/*tuition*/
+.tuition-img{
+    width:50%;
+    display:flex;
+}
+.tuition-img img{
+    width:100%;
+}
+.tuition-intro{
+    width:50%;
+    padding:70px;
+}
+.tuition-btn {
+    border: 1px solid #111a29;
+    color: #111a29;
+    margin-top: 50px;
+    width: 30%;
+    padding: 16px 32px;
+    border-radius: 60px;
+    font-size: 12px;
+}
+
+
+/*term-dates*/
+.term-dates{
+    background-color: #30ccd6;
+}
+.term-dates-wrapped{
+    margin: 0 8.5%;
+    padding: 80px 0;
+    position: relative;
+    align-items: center;
+}
+.term-dates-left{
+    width:40%;
+    margin-right:12%;
+    align-items: center;
+}
+.term-dates-desc{
+    font-family: 'Montserrat', sans-serif;
+    font-size:16px;
+    margin-bottom:70px;
+}
+.term-dates-link{
+    color: #111a29;
+    font-size:12px;
+    border-bottom:2px solid #000;
+    margin-top:70px;
+}
+.term-dates-right{
+    width:50%;
+}
+.term-dates-list{
+    background-color:#fff;
+    border-radius:16px;
+}
+.term-dates-list-item:last-child{
+    border:none;
+}
+.term-dates-list-item{
+    padding: 24px 6.4%;
+    border-bottom: 1px solid #ccd5dd;
+}
+.term-dates-list-title{
+    font-size:18px;
+    font-weight:bold;
+}
+.term-dates-list-even{
+    font-size:16px;
+}
+.font{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*footer*/
+.footer{
+    background: url('../img/index/footer.jpg');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height:30rem;
+    margin-top:3.5rem;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+}
+.footer-logo{
+    width:20%;
+}
+.footer-logo img{
+    width: 100%;
+}
+.footer-contact{
+    margin:2rem;
+}
+.social-network{
+    margin-top:2rem;
+    font-size: 40px;
+    color:white;
+}
+.footer-menu-1{
+    position:absolute;
+    color:white;
+    top:30px;
+    right:40px;
+}
+.menu-1-section{
+    text-align: center;
+    padding: 8px 16px;
+   
+}
+.menu-1-section>i{
+    font-size: 40px;
+}
+.menu-1-section>div{
+    border: 2px solid white;
+    margin-top:1rem;
+    font-size:12px;
+    padding:11px 22px;
+}
+.contact li{
+    list-style-type: none;
+    line-height:2.0;
+    color:beige;
+    text-decoration:none;
+}
+.menu-item {
+    text-decoration: none;
+    list-style-type:none;
+    color:beige;
+    line-height:1.6;
+    font-weight:700;
+}
+.license{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    color:antiquewhite;
 }
