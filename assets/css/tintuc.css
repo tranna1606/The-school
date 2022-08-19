@@ -47,7 +47,7 @@ header{
 /*news*/
 .news-wrapper{
     padding:12px 100px;
-    border-bottom: 2px solid #183153;
+    border-bottom: 1px solid #ccc;
 }
 .news-title{
     color: #b25b00;
@@ -58,9 +58,6 @@ header{
 .news-left{
     width:60%;
     margin-right: 50px;
-}
-.news-left-img{
-    
 }
 .news-left-img img{
     width:100%;
@@ -115,4 +112,49 @@ header{
 }
 .news-item-time>span{
     color: #858585;
+}
+
+/*events*/
+.events-list{
+    padding: 0 100px;
+    flex: 0 0 33.333333%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.events-item-wrapper{
+    padding: 16px;
+    width: 33.333333%;
+}
+.events-item{
+    height: 450px;
+    border-radius:16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.events-item-img img {
+   width:100%;
+  border-radius: 16px 16px 0 0;
+}
+.events-item-body{
+    padding: 12px;
+    margin-top: 10px;
+    
+}
+.events-item-title{
+    font-size: 18px;
+    font-weight:bold;
+}
+.events-time{
+    font-size: 12px;
+    margin: 12px 0;
+}
+.events-item-desc{
+    font-size: 16px;
+    color: #716D67;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
