@@ -4,44 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/trangchu.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/trangchu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <link rel="shortcut icon" href="./assets/img/logo/logo.png">
 <title> Trang Chủ-Trường Quốc tế Sài Gòn</title>
 </head>
 <body>
     <div class="app">
         <div class="header">
-            <div class="header-wrapped full-width fixed">
-                <div class="header-logo">
-                    <a href="" class="header-logo-link">
-                        <img src="./assets/img/logo/logo-ngang.png" alt="" class="header-logo-img">
-                    </a>
-                </div>
-                <div class="header-nav">
-                    <ul class="header-nav-list">
-                        <li class="header-nav-item"><a href="./index.html" class="header-nav-item-link">Trang Chủ</a></li>
-                        <li class="header-nav-item"><a href="./chuongtrinhhoc.html" class="header-nav-item-link">Chương Trình Học </a></li>
-                        <li class="header-nav-item"><a href="./tuyensinh.html" class="header-nav-item-link">Tuyển Sinh</a></li>
-                        <li class="header-nav-item"><a href="./tintuc.html" class="header-nav-item-link">Tin tức & Sự kiện</a></li>
-                    </ul>
-                </div>
-                <div class="header-right">
-                    <div class="header-right-resg btn-signup">
-                        <a href="" class="header-right-resg-link">ĐĂNG KÍ TƯ VẤN</a>
+            <div class="header-scroll">
+                <div class="header-wrapped full-width fixed">
+                    <div class="header-logo">
+                        <a href="#" class="header-logo-link">
+                            <img src="./assets/img/logo/logo-ngang.png" alt="" class="header-logo-img">
+                        </a>
                     </div>
-                    <div class="header-right-search">
-                        <a href="" class="header-right-search-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <div class="header-nav">
+                        <ul class="header-nav-list">
+                            <li class="header-nav-item"><a href="./index.html" class="header-nav-item-link">Trang Chủ</a></li>
+                            <li class="header-nav-item"><a href="./chuongtrinhhoc.html" class="header-nav-item-link">Chương Trình Học </a></li>
+                            <li class="header-nav-item"><a href="./tuyensinh.html" class="header-nav-item-link">Tuyển Sinh</a></li>
+                            <li class="header-nav-item"><a href="./tintuc.html" class="header-nav-item-link">Tin tức & Sự kiện</a></li>
+                        </ul>
                     </div>
-                </div>
-            </div>   
+                    <div class="header-right">
+                        <div class="header-right-resg js-btn-signup">
+                            <a href="#modal" class="header-right-resg-link">ĐĂNG KÍ TƯ VẤN</a>
+                        </div>
+                        <div class="header-right-search">
+                            <a href="" class="header-right-search-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="header-tobottom">
+                <a href="#content"><i class=" header-tobottom-icon fa-solid fa-angles-down"></i></a>
+            </div>
         </div>
     
-        <div class="content">
+        <div class="content" id="content">
             <!-- About school -->
              <div class="about-schl ">
                  <div class="background-img">
@@ -107,27 +113,33 @@
                 <h1 class="title">Những Điều Cần Biết</h1>
                 <div class="extra-list">
                     <div class="extra-item">
-                       <img src="./assets/img/extra-in4/extra-in4-1.jpg" alt="" class="extra-img">
+                        <div class="extra-item-img"> 
+                            <img src="./assets/img/extra-in4/extra-in4-1.jpg" alt="" class="extra-img">
+                        </div>
                         <div class="extra-body">
                             <h2 class="title">Thông Tin Tuyển Sinh</h2>
                             <div class="extra-desc">Trong năm 2022, Trường Scotch AGS tuyển sinh lớp 6 - 10. Tìm hiểu điều kiện tuyển sinh, học phí, học bổng, giải pháp các gói tài chính giáo dục toàn diện.</div>
-                            <div class="button"><a href="" class="extra-btn">Xem chi tiết</a></div>
+                            <div class="button"><a href="./tuyensinh.html" class="extra-btn">Xem chi tiết</a></div>
                         </div>
                     </div>
                     <div class="extra-item">
-                        <img src="./assets/img/extra-in4/extra-in4-2.jpg" alt="" class="extra-img">
+                        <div class="extra-item-img"> 
+                            <img src="./assets/img/extra-in4/extra-in4-2.jpg" alt="" class="extra-img">
+                        </div>
                         <div class="extra-body">
-                            <h2 class="title">Học Bổng Tài Năng</h2>
+                            <h2 class="title">Chương trình học</h2>
                             <div class="extra-desc">Các chính sách học bổng tài năng châu Á dành cho các em học sinh đạt thành tích học tập xuất sắc. Học bổng có giá trị lên đến 70% học phí.</div>
-                            <div class="button"><a href="" class="extra-btn">Xem chi tiết</a></div>
+                            <div class="button"><a href="./chuongtrinhhoc.html" class="extra-btn">Xem chi tiết</a></div>
                         </div>
                     </div>
                     <div class="extra-item">
-                        <img src="./assets/img/extra-in4/extra-in4-3.png" alt="" class="extra-img">
+                        <div class="extra-item-img"> 
+                            <img src="./assets/img/extra-in4/extra-in4-3.png" alt="" class="extra-img">
+                        </div>
                         <div class="extra-body">
-                            <h2 class="title">Tài Chính Giáo Dục</h2>
+                            <h2 class="title">Tin tức & Sự kiện</h2>
                             <div class="extra-desc">Các gói giải pháp tài chính giáo dục toàn diện, đa dạng giúp phụ huynh chủ động trong việc đầu tư giáo dục quốc tế cho con, mức học phí tiết kiệm có thể lên đến 100%.</div>
-                            <div class="button"><a class="extra-btn" href="">Xem chi tiết</a></div>
+                            <div class="button"><a class="extra-btn" href="./tintuc.html">Xem chi tiết</a></div>
                         </div>
                     </div>
                 </div>
@@ -153,8 +165,8 @@
                 <ul>
                     <li>Văn phòng Tuyển sinh:</li>
                     <li>10 Võ Văn Tần, Phường Võ Thị Sáu, Quận 03,Tp. Hồ Chí Minh</li>
-                    <li>Tel: <a href="">(098) 555.12.156</a></li>
-                    <li>Email: <a href="">info@ishcmc.edu.vn</a></li>
+                    <li>Tel: <a href="#">(098) 555.12.156</a></li>
+                    <li>Email: <a href="#">info@ishcmc.edu.vn</a></li>
                 </ul>
             </div>
             <div class="social-network">
@@ -162,21 +174,7 @@
                 <i class="fa-brands fa-youtube"></i>
                 <i class="fa-brands fa-linkedin"></i>
             </div>
-            </div>
-            <div class="footer-menu-1 flex">
-               <div class="menu-1-section">
-                <i class="fa-solid fa-school"></i>
-                <div>CƠ SỞ NHÀ TRƯỜNG </div>
-               </div>
-               <div class="menu-1-section">
-                <i class="fa-solid fa-comments"></i>
-                <div>ĐĂNG KÍ TƯ VẤN </div>
-               </div>
-               <div class="menu-1-section">
-                <i class="fa-solid fa-clipboard-list"></i>
-                <div>TUYỂN SINH</div>
-               </div>
-            </div>
+        </div>
             <div class="footer-menu-2">
                 <ul class="menu-item">
                     <li>LỘ TRÌNH HỌC TẬP</li>
@@ -201,29 +199,24 @@
         </div>
     </div>
 
-    <div class="modal js-modal">
+    <div id="modal" class="modal js-modal">
         <div class="modal-container js-modal-container">
-          <div class="modal-close js-modal-close">
-            <i class="fa-solid fa-x"></i>
-          </div>
-          <header class="modal-header">
-            <h1>Đăng Kí Tư Vấn</h1>
-          </header>
-  
-          <div class="modal-body ">
-              <div class="modal-body-name">
-            <input type="text" placeholder="Họ và tên lót *">
-            <input type="text" placeholder="Tên"></div>
-                <div>
-            <input type="text" placeholder="Email*">
-            <select name="grades" id="">
-                <option value="Lớp 10">Lớp 10</option>
-                <option value="Lớp 11">Lớp 11</option>
-                <option value="Lớp 12">Lớp 12</option>
-            </select></div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Nội dung cần tư vấn"></textarea>   
-            <button type="submit" value="HOÀN THÀNH">HOÀN THÀNH</button>
-          </div>
-          <script src="./assets/trangchu.js"></script>
+            <div class="modal-close js-modal-close">
+              <i class="fa-solid fa-x"></i>
+            </div> 
+            <div class="modal-body-img">
+                <img src="https://my-assets.netlify.app/codepen/dailyui-001/img.png?fbclid=IwAR1PnyKUDaFKkME7p2Xyh7l2rLiHGrb5qruphXAhvzThLj4jr-GGJzqosfA" alt="">
+            </div> 
+            <div class="modal-body">
+                <form class="modal-body-name">
+                    <input type="text" placeholder="Họ và tên" required> 
+                    <input type="email" placeholder="Email" required>
+                    <textarea name="" id="" cols="20" rows="10" placeholder="Nội dung cần tư vấn"></textarea>   
+                    <button type="submit">Hoàn Thành</button>
+                </form>
+            </div>
+        </div>
+    </div>
+          <script src="./assets/js/trangchu.js"></script>
 </body>
 </html>

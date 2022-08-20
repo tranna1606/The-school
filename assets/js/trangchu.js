@@ -1,26 +1,36 @@
-let signUp = document.querySelector('.btn-signup')
-let modal=document.querySelector('.modal')
-let modalContainer = document.querySelector('.js-modal-container')
-let modalClose=document.querySelector('.js-modal-close')
+$(document).ready(function() {
+  //scroll header
+  $(document).scroll(function(){
+    var scroll= $(window).scrollTop();
+    var header=$('.header-scroll');
+    if(scroll>= 120){
+      header.addClass('sticky');
+    }else{
+      header.removeClass('sticky');
+    }
+  })
 
+  let resg= $('.js-btn-signup');
+  let modal=$('.js-modal');
+  let modal_container=$('.js-modal-container');
+  let modal_close=$('.js-modal-close');
 
-function showSignup () {
-    modal.classList.add('open')
-  }
+  resg.click(function() {
+    modal.addClass('open');
+    $('body').css('overflow','hidden'); 
+  })
 
-  function hideSignup() {
-    modal.classList.remove('open')
-  }
+  modal_close.click(function() {
+    modal.removeClass('open');
+    $('body').css('overflow','');  
+  })
 
-  signUp.addEventListener('click',showSignup)
+  modal_container.click(function(event) {
+    event.stopPropagation();
+  })
 
-
- modalClose.addEventListener('click',hideSignup)
-      
-        
-  modal.addEventListener('click',hideSignup)
-      
-  modalContainer.addEventListener('click', function(even){
-    even.stopPropagation()
-
-   })
+  modal.click(function() {
+    modal.removeClass('open');
+    $('body').css('overflow','');   
+  })
+})
