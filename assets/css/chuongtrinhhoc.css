@@ -4,7 +4,7 @@
     display: flex; 
     justify-content: space-between;
     align-items:flex-end; 
-    background-color:#005d83;    
+    background-color:#005d83;  
 }
 
 .header-logo{ 
@@ -23,6 +23,7 @@
 .home{
     margin-right:1rem;
 }
+
 .header-nav-list{
     display:flex;
    
@@ -195,15 +196,23 @@ input.input-search {
     padding:70px;
 }
 .tuition-btn {
-    border: 1px solid #111a29;
-    color: #111a29;
     margin-top: 50px;
     width: 30%;
-    padding: 16px 32px;
+}
+.tuition-btn>a{
+    text-align: center;
+    border: 1px solid #111a29;
+    text-decoration: none;
+    color:#111a29;
+    font-weight: bold;
+    padding: 12px 24px;
     border-radius: 60px;
     font-size: 12px;
 }
-
+.tuition-btn:hover a{
+    color:#fff;
+    background-color: #111a29;
+}
 
 /*term-dates*/
 .term-dates{
@@ -230,6 +239,10 @@ input.input-search {
     font-size:12px;
     border-bottom:2px solid #000;
     margin-top:70px;
+}
+.term-dates-link>a{
+    color: #111a29;
+    text-decoration: none;
 }
 .term-dates-right{
     width:50%;
@@ -282,31 +295,19 @@ input.input-search {
     font-size: 40px;
     color:white;
 }
-.footer-menu-1{
-    position:absolute;
-    color:white;
-    top:30px;
-    right:40px;
-}
-.menu-1-section{
-    text-align: center;
-    padding: 8px 16px;
-   
-}
-.menu-1-section>i{
-    font-size: 40px;
-}
-.menu-1-section>div{
-    border: 2px solid white;
-    margin-top:1rem;
-    font-size:12px;
-    padding:11px 22px;
-}
+
 .contact li{
     list-style-type: none;
     line-height:2.0;
     color:beige;
     text-decoration:none;
+}
+.contact a{
+    color: white;
+    text-decoration: none;
+}
+.contact a:hover{
+    text-decoration: underline;
 }
 .menu-item {
     text-decoration: none;

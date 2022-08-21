@@ -184,31 +184,19 @@ header{
     font-size: 40px;
     color:white;
 }
-.footer-menu-1{
-    position:absolute;
-    color:white;
-    top:30px;
-    right:40px;
-}
-.menu-1-section{
-    text-align: center;
-    padding: 8px 16px;
-   
-}
-.menu-1-section>i{
-    font-size: 40px;
-}
-.menu-1-section>div{
-    border: 2px solid white;
-    margin-top:1rem;
-    font-size:12px;
-    padding:11px 22px;
-}
+
 .contact li{
     list-style-type: none;
     line-height:2.0;
     color:beige;
     text-decoration:none;
+}
+.contact a{
+    color: white;
+    text-decoration: none;
+}
+.contact a:hover{
+    text-decoration: underline;
 }
 .menu-item {
     text-decoration: none;

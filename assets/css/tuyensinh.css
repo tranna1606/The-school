@@ -1,3 +1,23 @@
+.header-scroll.sticky{
+    position:fixed;
+    width:100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    background-color:#fff;
+    z-index: 100;
+}
+.sticky .header-name{
+    color:#003057;
+}
+.sticky .header-right-menu>i{
+    color:#fff;
+    background-color:#003057;
+}
+
+
+
+
 header{
     background-color: #003057;
 }
@@ -23,25 +43,30 @@ header{
     width:30%;
 }
 .header-right-resg{
-    background-color:#30ccd6;
-    padding:12px 24px;
     margin-right:12px;
-    border-radius: 60px;
-    
 }
-.header-right-resg >a{
+.header-right-resg>a{
+    background-color:#30ccd6;
+    padding:16px 32px;
+    border-radius: 60px;
     color:#111a29;
     font-size:12px;
     font-weight:600;
     text-decoration: none;
     text-transform: uppercase;
 }
+.header-right-resg>a:hover{
+    color: #fff;
+    background-color:#111a29;
+}
 
 .header-right-menu{
+    
+}
+.header-right-menu>i{
     font-size:25px;
-    font-weight:400;
     background-color:#fff;
-    padding:10px 15px;
+    padding: 12px 15px;
     border-radius:50%;
 }
 .header-title-part{
@@ -260,6 +285,7 @@ header{
     
 }
 .question-item{
+    position:relative;
     padding: 32px;
     border-bottom:1px solid #ccd5dd;
 }
@@ -267,7 +293,7 @@ header{
     border:none;
 }
 .question-item-title{
-    position:relative;
+    
 }
 .question-item-left{
     padding-right:25%;
@@ -275,13 +301,15 @@ header{
     font-weight:600;
     
 }
+.question-item-right{
+    position:absolute;
+    right: 48px;
+    top: 48x;
+}
 .question-item-right>i{
     background-color: #fff;
     border-radius:50%;
     padding:9px 10px;
-    position:absolute;
-    top:20px;
-    right:20px;
     cursor: pointer;
     transition: all 0.25s;
     transform: rotate(-90deg);
@@ -292,6 +320,128 @@ header{
     margin-right:25%;
     display:block;
 }
+.modal{
+    position:fixed;
+    /*tu dong width height bang voi cua so trinh duyet*/
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.4);
+    align-items:center;
+    justify-content:center;
+    display:none;
+    z-index: 1000; 
+}
+.modal.open{
+    display:flex;
+}
+.modal-container{
+    background:#fff;
+    width:900px;
+    max-width:calc(100% - 32px);
+    min-height:200px;
+    position:relative;
+    animation:modalFadeIn ease .5s;
+    display:flex;
+    border-radius: 12px;
+    overflow:hidden;    
+}
+.modal-header{
+    background-color:#005a87;
+    height: 130px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    color:#fff;
+}
+.modal-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    padding: 12px;
+    cursor: pointer;   
+    padding: 8px 12px;
+    background-color:#094067;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.modal-close:hover{
+    opacity:1;
+}
+ 
+.modal-body{
+    width:50%;
+    padding:16px 32px;    
+    display:flex; 
+    margin: 32px 0;
+}
+
+.modal-body-img {
+    width:50%;
+    display:flex;
+}
+
+.modal-body-img > img {
+    width: 100%;
+}
+ 
+.modal-body-name > input {
+    border: none;   
+    margin-bottom: 24px;
+    border-bottom: 2px solid #094067;
+    width:100%;
+    outline:none;
+    font-size: 16px;
+    padding: 4px 0;
+}  
+
+.modal-body-name > input::placeholder    {
+    color: #094067;
+    text-transform: capitalize;
+}
+
+.modal-body-name > textarea {
+    border: 2px solid #094067;
+    width:100%; 
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.modal-body-name > textarea:focus {
+    border: 2px solid #094067; 
+    outline: none;
+}
+
+.modal-body-name > button {
+    width:100%;
+    border: none;
+    padding: 12px 0;
+    color: white;
+    background-color:#094067;
+    cursor:pointer;
+    margin-top: 12px;
+    font-size: 16px; 
+    text-transform: uppercase; 
+    border-radius:4px;
+}
+
+
+@keyframes modalFadeIn {
+    from{
+        opacity:0;
+        transform:translateY(-140px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);/*tra ve vt ban dau*/
+    }
+}
+
 
 
 
@@ -403,6 +553,7 @@ header{
 }
 .weather-btn:hover {
     background-color: #fff;
+    font-weight: bold;
 }
 .weather-btn:hover a{
     color:#003057;
@@ -444,7 +595,7 @@ header{
     background-repeat:no-repeat;
     background-size: cover;
     height:30rem;
-    margin-top:0;
+    margin-top:3.5rem;
     justify-content: space-around;
     align-items: center;
     position:relative;
@@ -463,31 +614,19 @@ header{
     font-size: 40px;
     color:white;
 }
-.footer-menu-1{
-    position:absolute;
-    color:white;
-    top:30px;
-    right:40px;
-}
-.menu-1-section{
-    text-align: center;
-    padding: 8px 16px;
-   
-}
-.menu-1-section>i{
-    font-size: 40px;
-}
-.menu-1-section>div{
-    border: 2px solid white;
-    margin-top:1rem;
-    font-size:12px;
-    padding:11px 22px;
-}
+
 .contact li{
     list-style-type: none;
     line-height:2.0;
     color:beige;
     text-decoration:none;
+}
+.contact a{
+    color: white;
+    text-decoration: none;
+}
+.contact a:hover{
+    text-decoration: underline;
 }
 .menu-item {
     text-decoration: none;
