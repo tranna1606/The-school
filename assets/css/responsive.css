@@ -1,6 +1,5 @@
 @media(max-width:740px){
-    .header-wrapped {
-        
+    .header-wrapped {   
     }
     .header-nav {
         display: none;
@@ -15,7 +14,10 @@
         flex-direction: column-reverse;
     }
 
-    
+    .about-schl {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 
     .reason-img{
         width:100%;
@@ -84,7 +86,22 @@
     .mobile-menu-link { 
         font-size: 24px;
         text-decoration: none;
-        color: black;
+        color: white; 
+        /* position: relative; */ 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    } 
+
+    .active-mobile-menu {
+        display: flex !important; 
+    } 
+    
+    .mobile-menu-link {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        padding: 32px 0;
     }
 
     .header-right-resg-link {
@@ -99,22 +116,7 @@
         display:block;
         width:30%; 
         padding: 0 16px;
-    } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }  
 
     /*tuyen sinh*/
     .question{
@@ -145,4 +147,76 @@
     
     }
     
+    /* tuyen sinh */ 
+    .header-left {
+        margin: 0;
+    }
+
+    .header-right {
+        margin: 0 10px 0 0 ;
+    } 
+
+    .header-title {
+        margin: 28px 12px;
+        font-size: 32px;
+    }
+
+    .header-img {
+        width: 100%;
+    }
+
+    .header-img-text {
+        font-size: 22px;
+    }
+
+    .header-img-content {
+        width: 100%;
+        padding: 22px;
+    }
+
+    .experience-intro {
+        width: 100%;
+        padding: 180px 16px 50px;
+        text-align: center;
+    }
+
+    .experience-title {
+        font-size: 28px;
+    }
+
+    .experience-content {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    
+    .experience-item-content {
+        height: 550px;
+    } 
+
+    .process {
+        padding: 64px 16px;
+        flex-wrap: wrap;
+    }
+
+    .process-left {
+        width: 100%;
+    }
+
+    .process-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .question-item-left {
+        padding-right: 50px;
+    } 
+
+    /* Modal */
+    .modal-body-img {
+        width: 100%;   
+    }
+
+    .modal-body { 
+        width: 100%;
+    }
 }

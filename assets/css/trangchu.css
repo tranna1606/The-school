@@ -70,6 +70,8 @@
     align-items: center;    
    
 }
+
+
 .header-right-resg-link{
     text-decoration: none;
     display:block;
@@ -90,11 +92,54 @@
     position: absolute;
     bottom:20px;
     left: 50%;
-    right: 50%;
+    transform: translateX(-50%);
 }
 .header-tobottom-icon{
     font-size: 42px;
     color:#183153;
+}
+
+.header-tobottom a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #06A8FF;
+    border-right: 5px solid #06A8FF;
+    transform: rotate(45deg); 
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
 }
 
 .about-schl{

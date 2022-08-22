@@ -21,3 +21,43 @@ html{
 .flex{
     display:flex;
 }
+
+.mobile-menu {
+    display: block;
+    flex: 1;
+    text-align: center;
+}
+
+.mobile-menu-item-link { 
+    font-size: 24px;
+    text-decoration: none;
+    color: white; 
+    /* position: relative; */ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mobile-menu-list {
+    position: absolute; 
+    z-index: 100;
+    display: none; 
+    height: auto;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    flex-direction: column;
+    background-color: #003057;
+    list-style-type: none;
+}
+
+.active-mobile-menu {
+    display: flex !important; 
+} 
+
+.mobile-menu-item-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    padding: 32px 0;
+}
