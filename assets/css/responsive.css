@@ -1,0 +1,148 @@
+@media(max-width:740px){
+    .header-wrapped {
+        
+    }
+    .header-nav {
+        display: none;
+    }
+    .header-right-search {
+        display: none;
+    }
+    .background-img{
+        top: 50%;
+    }
+    .reason-wrapped  {
+        flex-direction: column-reverse;
+    }
+
+    
+
+    .reason-img{
+        width:100%;
+    }
+    .why-list{
+        width:100%;
+    }
+    .why-item{
+        width:100%;
+    }
+    .infer{
+        height:48rem;
+    }
+    .infer-parph{
+       right:20px;
+       left:20px;
+        width:auto;
+    }
+    .extra-item{
+        width:100%;
+        margin-bottom:24px;
+    }
+    .slogan-text {
+        width:100%;
+    }
+    .slogan-img{
+        display:none;
+    }
+    .footer-menu-2{
+        width:100%;
+        order: 1;
+        text-align: center;
+        margin-top:36px;
+    }
+    .footer-menu-3{
+        order: 2;
+        width:100%;
+        text-align: center;
+    }
+    .footer-logo{
+        order: 3;
+        width:100%;
+        text-align: center;
+    }
+    .footer-logo img{
+        width:70%;
+    }
+    .footer-contact{
+        order: 4;
+        width:100%;
+        text-align: center;
+    }
+    .license{
+       position: unset;
+       order:5;
+       text-align: center;
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+        display: block;
+        flex: 1;
+        text-align: center;
+    }
+
+    .mobile-menu-link { 
+        font-size: 24px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .header-right-resg-link {
+        font-size: 12px;
+    }
+
+    .header-logo {
+        display: none;
+    }
+
+    .header-logo-mobile {
+        display:block;
+        width:30%; 
+        padding: 0 16px;
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*tuyen sinh*/
+    .question{
+        width:100%;
+        
+    }
+    .question-list{
+        border-radius: 0;
+    }
+    .question-item{
+        padding:20px 24px;
+        
+    }
+    .weather{
+        width:100%;
+        position:relative;
+        left:0;
+    }
+    .local-map{
+        height:468px;
+    }
+    .experience-img {
+        width:100%;
+    }
+    .experience-title{
+        width:100%;
+        padding:0;
+    
+    }
+    
+}

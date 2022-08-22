@@ -285,7 +285,6 @@ header{
     
 }
 .question-item{
-    position:relative;
     padding: 32px;
     border-bottom:1px solid #ccd5dd;
 }
@@ -293,7 +292,8 @@ header{
     border:none;
 }
 .question-item-title{
-    
+   display:flex;
+
 }
 .question-item-left{
     padding-right:25%;
@@ -467,7 +467,6 @@ header{
 
 /*map-weather*/
 .map-weather{
-    
 }
 .map{
     position: relative;
@@ -594,11 +593,11 @@ header{
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
-    height:30rem;
     margin-top:3.5rem;
     justify-content: space-around;
     align-items: center;
     position:relative;
+    flex-wrap: wrap;
 }
 .footer-logo{
     width:20%;
@@ -641,7 +640,6 @@ header{
     right:20px;
     color:antiquewhite;
 }
-
 /* Slick slider */
 
 .slick-prev,
