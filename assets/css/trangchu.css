@@ -16,13 +16,16 @@
 .sticky .header-right-resg-link{
     font-size:12px;
 }
+.sticky .header-nav-item-link:hover{
+    color:#ffcb37;
+}
 
 
 
 /* Header */
 .header{   
     position: relative;  
-    background-image: url('../img/index/footer.jpg');
+    background-image: url('https://images.unsplash.com/photo-1542404937-2132aa1fa6fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
     background-size: cover; 
     background-position:center;
     background-repeat: no-repeat;  

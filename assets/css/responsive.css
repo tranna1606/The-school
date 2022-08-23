@@ -104,6 +104,12 @@
         padding: 32px 0;
     }
 
+    
+    .header-logo-mobile {
+        display:block;
+        width:30%; 
+        padding: 0 16px;
+    }  
     .header-right-resg-link {
         font-size: 12px;
     }
@@ -112,11 +118,6 @@
         display: none;
     }
 
-    .header-logo-mobile {
-        display:block;
-        width:30%; 
-        padding: 0 16px;
-    }  
 
     /*tuyen sinh*/
     .question{
@@ -135,8 +136,16 @@
         position:relative;
         left:0;
     }
+    .map{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
     .local-map{
         height:468px;
+    }
+    .weather{
+        border-radius:0;
     }
     .experience-img {
         width:100%;
@@ -146,7 +155,99 @@
         padding:0;
     
     }
-    
+    .header-name-2{
+        display:none;
+    }
+
+    /*chuong trinh hoc*/
+   
+    .contact-list{
+        display:none;
+    }
+    .welcome{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .welcome-left{
+        margin: 0;
+       width:100%;
+       padding: 56px 6.5% 24px;
+    }
+    .welcome-right{
+        width: 100%;
+
+    }
+    .general {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .bridge{
+        width:100%;
+    }
+    .general-intro{
+        width:100%;
+        padding: 46px 6.5% 56px;
+    }
+    .benefit{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .benefit-right{
+        width: 100%;
+    }
+    .benefit-img{
+        width: 100%;
+    }
+    .benefit-left{
+        width:100%;
+        padding: 46px 6.5% 56px;
+    }
+    .benefit-body{
+        width:100%;
+    }
+    .tuition{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .tuition-img{
+        width:100%;
+    }
+    .tuition-intro{
+        width:100%;
+        padding: 46px 6.5% 56px;
+    }
+    .tuition-btn{
+        width:100%;
+    }
+    .term-dates-wrapped{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items:baseline;
+    }
+    .term-dates-left{
+        width:100%;
+        margin-bottom: 55px;    
+    }
+    .term-dates-desc{
+        margin-bottom: 50px;
+    }
+    .term-dates-right{
+        width:100%;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* tuyen sinh */ 
     .header-left {
         margin: 0;
@@ -218,5 +319,66 @@
 
     .modal-body { 
         width: 100%;
+    }
+
+    /*tin tức*/
+    .news-wrapper {
+        width:100%;
+        padding:0;
+    }
+    .header-menu-logo img{
+        display:none;
+    }
+    .news{
+        width:100%;
+    }
+    .news-title{
+       font-size: 25px;
+       margin: 22px 0 15px;
+    }
+    .news-left{
+        margin-right:20px;
+    }
+    .news-left-title{
+        font-size:14px;
+    }
+    .news-left-line>.title{
+        margin-right:50px;
+    }
+    .news-left-time{
+        font-size:12px;
+    }
+    .news-left-time>i{
+        margin-right:5px;
+    }
+    .news-left-text{
+        font-size:12px;
+    }
+    .news-item-title{
+        font-size:11px;
+    }
+    .news-left-line>.title{
+        font-size:11px;
+    }
+    .news-item-time{
+        font-size:11px;
+    }
+    .news-item-time>i{
+        margin-right:5px;
+    }
+    .events-list {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding:0;
+    }
+    .events-item-wrapper{
+        width:100%;
+        padding:0;
+    }
+    .events-item{
+        border-radius: 0;
+    }
+    .events-item-img img{
+        border-radius: 0;
     }
 }
