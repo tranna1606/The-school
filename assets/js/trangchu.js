@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   resg.click(function() {
     modal.addClass('open');
-    $('body').css('overflow','hidden'); 
+    $('body').css('overflow','hidden');  
   })
 
   modal_close.click(function() {
