@@ -33,7 +33,7 @@
         width:100%;
     }
     .infer{
-        height:48rem;
+        height:53rem;
     }
     .infer-parph{
        right:20px;
@@ -272,7 +272,7 @@
     .header-img {
         width: 100%;
     }
-
+    
     .header-img-text {
         font-size: 22px;
     }
@@ -338,6 +338,9 @@
         width:100%;
         padding:0;
     }
+    .header-img-4{
+        padding-top:100px;
+    }
     .header-menu-logo img{
         display:none;
     }
@@ -400,5 +403,9 @@
 
     .header-news-mobile {
         display: flex;
+    }
+
+    .header-logo-mobile .header-logo-img {
+        display: block;
     }
 }

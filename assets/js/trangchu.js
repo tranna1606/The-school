@@ -8,6 +8,10 @@ $(document).ready(function() {
     }else{
       header.removeClass('sticky');
     }
+    if(scroll>2660) {
+      $('.slogan-text').css('animation','moveInleft  ease .5s')
+      $('.slogan-pic').css('animation','moveInright ease .5s')
+    }
   })
 
   let resg= $('.js-btn-signup');
@@ -47,4 +51,7 @@ $(document).ready(function() {
       $(this).children('i').attr('class','fa-solid fa-bars') 
     }
   })
+
+
+
 })

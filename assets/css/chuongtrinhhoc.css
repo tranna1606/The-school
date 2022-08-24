@@ -34,9 +34,7 @@
 .home{
     margin-right:1rem;
 }
-.header-nav {
-    margin-left: -80px;
-}
+
 .header-nav-list{
     display:flex;
    
@@ -325,19 +323,19 @@
     list-style-type:none;
     color:beige;
     line-height:1.6;
-    font-weight:700;
+    font-weight:700;        
 }
 .license{
     position:absolute;
     bottom:20px;
     right:20px;
     color:antiquewhite;
-}
-
+} 
 
 .header-logo-mobile .header-logo-img {
     margin: 0;
-    padding-left: 16px; 
+    padding-left: 16px;  
+    display:none;
 }  
 
 .mobile-menu {
