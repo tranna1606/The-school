@@ -1,3 +1,7 @@
+
+.mobile-menu {
+    display:none;
+}
 @media(max-width:740px){
     .header-wrapped {   
     }
@@ -78,9 +82,11 @@
 
     /* Mobile menu */
     .mobile-menu {
-        display: block;
+        display: flex;
         flex: 1;
         text-align: center;
+        height: 100px;  
+        justify-content: center;
     }
 
     .mobile-menu-link { 
@@ -88,7 +94,7 @@
         text-decoration: none;
         color: white; 
         /* position: relative; */ 
-        display: flex;
+        display: inline;
         align-items: center;
         justify-content: space-around;
     } 
@@ -108,10 +114,11 @@
     .header-logo-mobile {
         display:block;
         width:30%; 
-        padding: 0 16px;
+        padding: 0 8px;
     }  
     .header-right-resg-link {
         font-size: 12px;
+        padding: 8px;
     }
 
     .header-logo {
@@ -254,7 +261,7 @@
     }
 
     .header-right {
-        margin: 0 10px 0 0 ;
+        margin: 0 4px 0 0 ;
     } 
 
     .header-title {
@@ -321,6 +328,11 @@
         width: 100%;
     }
 
+    .modal-container {
+        height: 500px;
+        overflow-y: auto;
+    }
+
     /*tin tức*/
     .news-wrapper {
         width:100%;
@@ -380,5 +392,13 @@
     }
     .events-item-img img{
         border-radius: 0;
+    }
+
+    .slider-img img {
+        height: 170px;
+    }
+
+    .header-news-mobile {
+        display: flex;
     }
 }

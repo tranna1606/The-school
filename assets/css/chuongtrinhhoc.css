@@ -335,3 +335,14 @@
 }
 
 
+.header-logo-mobile .header-logo-img {
+    margin: 0;
+    padding-left: 16px; 
+}  
+
+.mobile-menu {
+    justify-content: flex-end !important;
+    padding-right: 16px;
+}
+ 
+
