@@ -117,23 +117,6 @@ header{
     font-weight:800;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*experience*/
 .experience{
     background-color:#30ccd6;
@@ -338,30 +321,6 @@ header{
     display:none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*map-weather*/
 .map-weather{
 }
@@ -375,7 +334,7 @@ header{
 }
 .weather{
     background-color: #003057;
-    top:8%;
+    top:0;
     bottom: 8%;
     left:8.5%;
     padding:48px;
