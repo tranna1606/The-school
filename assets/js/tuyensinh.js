@@ -40,7 +40,7 @@ $(document).ready(function() {
     })
 
 
-    let resg= $('.js-btn-signup');
+    let resg= $('.js-btn-signup');  
     let modal=$('.js-modal');
     let modal_container=$('.js-modal-container');
     let modal_close=$('.js-modal-close');
